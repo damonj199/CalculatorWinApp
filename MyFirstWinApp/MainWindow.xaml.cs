@@ -41,17 +41,17 @@ namespace MyFirstWinApp
             if (TextboxResult.Text == "+")
             {
                 _operation = "+";
-            }
+        }
             else if (TextboxResult.Text == "-")
-            {
+        {
                 _operation = "-";
-            }
+        }
             else if(TextboxResult.Text == "*")
-            {
+        {
                 _operation = "*";
-            }
+        }
             else if (TextboxResult.Text == "/")
-            {
+        {
                 _operation = "/";
             }
 

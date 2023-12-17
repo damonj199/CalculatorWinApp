@@ -23,6 +23,7 @@ namespace MyFirstWinApp
 
         public double _resultValue = 0;
         private string _operation = "";
+        bool _bTochka = false;
         private void ButtonNumber_Click(object sender, RoutedEventArgs e)
         {
             if(TextboxResult.Text == "0")
@@ -41,21 +42,22 @@ namespace MyFirstWinApp
             if (TextboxResult.Text == "+")
             {
                 _operation = "+";
-        }
+            }
             else if (TextboxResult.Text == "-")
-        {
+            {
                 _operation = "-";
-        }
+            }
             else if(TextboxResult.Text == "*")
-        {
+            {
                 _operation = "*";
-        }
+            }
             else if (TextboxResult.Text == "/")
-        {
+            {
                 _operation = "/";
             }
 
             TextboxResult.Text = "";
+            _bTochka = false;
         }
 
         private void ButtonEqual_Click(object sender, RoutedEventArgs e)
@@ -89,6 +91,16 @@ namespace MyFirstWinApp
             TextboxResult.Clear();
             _resultValue = 0;
             _operation = "";
+            _bTochka = false;
+        }
+
+        private void ButtonDouble_Click(object sender, RoutedEventArgs e)
+        {
+            if (_bTochka == false && TextboxResult.Text != "")
+            {
+                TextboxResult.Text += ",";
+                _bTochka = true;
+            }
         }
     }
 }

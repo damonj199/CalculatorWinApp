@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyFirstWinApp"
         mc:Ignorable="d"
-        Title="Калькулятор" Height="421" Width="250" InputScope="Xml" ResizeMode="CanResizeWithGrip" Icon="/Hopstarter-Soft-Scraps-Calculator.ico" Background="#FF7D7979">
+        Title="Калькулятор" Height="421" Width="250" InputScope="Xml" ResizeMode="CanResizeWithGrip" Icon="/Hopstarter-Soft-Scraps-Calculator.ico" Background="#FF7D7979" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
     <Grid x:Name="Calculator" HorizontalAlignment="Center" Width="225">
         <Button x:Name="ButtonClier" Content="C" HorizontalAlignment="Left" Height="50" Margin="5,104,0,0" VerticalAlignment="Top" Width="105" Background="#FF4A4444" Foreground="Red" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Click="ButtonClier_Click"/>
         <Button x:Name="ButtonDivision" Content="/" HorizontalAlignment="Left" Height="50" Margin="115,104,0,0" VerticalAlignment="Top" Width="50" Background="#FF4A4444" Foreground="#FF50B13C" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Click="ButtonOperator_Click"/>
         <Button x:Name="ButtonMultiplication" Content="*" HorizontalAlignment="Left" Height="50" Margin="170,104,0,0" VerticalAlignment="Top" Width="50" Background="#FF4A4444" Foreground="#FF50B13C" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.76,0.521" Click="ButtonOperator_Click"/>
-        <Button x:Name="ButtonDouble" Content="." HorizontalAlignment="Left" Height="50" Margin="115,326,0,0" VerticalAlignment="Top" Width="50" Background="#FF4A4444" Foreground="White" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2" Click="ButtonNumber_Click"/>
+        <Button x:Name="ButtonDouble" Content="," HorizontalAlignment="Left" Height="50" Margin="115,326,0,0" VerticalAlignment="Top" Width="50" Background="#FF4A4444" Foreground="White" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2" Click="ButtonDouble_Click"/>
         <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" Height="105" Margin="170,269,0,0" VerticalAlignment="Top" Width="50" Background="#FF50B13C" Foreground="Black" Padding="5,5,5,5" FontSize="36" FontWeight="Bold" Click="ButtonEqual_Click"/>
         <Button x:Name="ButtonZero" Content="0" HorizontalAlignment="Right" Height="50" Margin="0,326,115,0" VerticalAlignment="Top" Width="105" Background="#FF4A4444" Foreground="White" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Click="ButtonNumber_Click"/>
         <Button x:Name="Button2" Content="2" HorizontalAlignment="Left" Height="50" Margin="60,269,0,0" VerticalAlignment="Top" Width="50" Background="#FF4A4444" Foreground="White" Padding="5,5,5,5" FontSize="24" FontWeight="Bold" Click="ButtonNumber_Click"/>
